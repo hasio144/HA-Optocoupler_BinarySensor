@@ -1,0 +1,15 @@
+binary_sensor:
+  - platform: gpio
+    device_class: garage_door
+    name: Small Gate             ##YELLOW
+    pin:
+      number: 12                 #D6
+      mode: INPUT_PULLUP
+      inverted: True
+  - platform: gpio
+    device_class: garage_door
+    name: Big Gate                ##BLUE
+    pin:
+      number: 14                  #D5
+      mode: INPUT_PULLUP
+      inverted: True
